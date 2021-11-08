@@ -28,9 +28,6 @@ router.get(
 
     //for debugging purposes
     console.log(EventsConductedByClub);
-    if (EventsConductedByClub.length === 0) {
-      return response.status(404).send("No events conducted by this club");
-    }
     response.status(200).send(EventsConductedByClub);
   }
 );
