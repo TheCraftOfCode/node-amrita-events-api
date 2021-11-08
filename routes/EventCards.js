@@ -23,6 +23,7 @@ router.get(
           "OrganizingClub",
           "Description",
           "Date",
+          "ContactDetails",
         ])
       );
     });
