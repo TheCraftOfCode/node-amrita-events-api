@@ -99,7 +99,7 @@ router.post(
 );
 
 router.put(
-  ":/id",
+  "/:id",
   [AuthenticateUser, CheckAdminUser],
   async (request, response) => {
     const UpdateEvent = await Events.findByIdAndUpdate(
