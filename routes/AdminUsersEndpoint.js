@@ -98,4 +98,19 @@ router.post(
   }
 );
 
+router.put(
+  ":/id",
+  [AuthenticateUser, CheckAdminUser],
+  async (request, response) => {
+    const UpdateEvent = await Events.findByIdAndUpdate(
+      request.params.id,
+      request.body
+    );
+    if (!UpdateEvent)
+      return response.status(400).send("Sorry..! .Event Not found...!");
+
+    response.status(200).send(UpdateEvent);
+  }
+);
+
 module.exports = router;
