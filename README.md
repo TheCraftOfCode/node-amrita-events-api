@@ -1,4 +1,4 @@
-# Project: Amrita-Events-Api 
+# Project: Amrita-Events-Api
 
 Backend Rest API for Amrita Events Android App
 
@@ -106,16 +106,17 @@ Backend Rest API for Amrita Events Android App
 
 ## Endpoint: `/api/all-events`
 
-## Method: `GET` 
+## Method: `GET`
 
 End
 
-## Usage: 
+## Usage:
+
 `if the user is authenticated then this endpoint responds with list of all the events with sufficient information for the card view`
 
-### Note: 
-`This Endpoint is only for Non-admin Authenticated Users.`
+### Note:
 
+`This Endpoint is only for Non-admin Authenticated Users.`
 
 > ```
 > https://amrita-events.herokuapp.com/api/all-events
@@ -129,12 +130,13 @@ End
 
 ## Method: `GET`
 
-## Usage: 
+## Usage:
+
 `if the user is authenticated then this endpoint responds with the completed details of the event corresponding to the id given in the request parameters`
 
-### Note: 
-`This endpoint is only for the Non-Admin authenticated users`
+### Note:
 
+`This endpoint is only for the Non-Admin authenticated users`
 
 > ```
 > https://amrita-events.herokuapp.com/api/all-events/6125250abb7921a16d0b6ae7
@@ -148,12 +150,13 @@ End
 
 ## Method: `GET`
 
-## Usage : 
+## Usage :
+
 `if the user is authenticated and is an admin then this endpoint responds with the list of all the events in the database`
 
-## Note: 
-`This endpoint is only for Authenticated Admin Users`
+## Note:
 
+`This endpoint is only for Authenticated Admin Users`
 
 > ```
 > https://amrita-events.herokuapp.com/api/admin-users-portal
@@ -163,12 +166,12 @@ End
 
 ## End-point-name: AddEventForAdmins
 
-
 ## Endpoint: `/api/admin-users-portal`
 
 ## Method: `POST`
 
 ## Usage:
+
 `If the user is an authenticated Admin and all the validation on that request's body satisfy then this endpoint responds with "Event Created Successfully..! Message`
 
 ## Body (JSON format) :
@@ -211,9 +214,9 @@ End
 }
 ```
 
-### Note: 
-`This Endpoint is only for the Authenticated Admin Users.`
+### Note:
 
+`This Endpoint is only for the Authenticated Admin Users.`
 
 > ```
 > https://amrita-events.herokuapp.com/api/admin-users-portal
@@ -223,23 +226,24 @@ End
 
 ## End-point-name: DeleteEventOnlyForAdmins
 
-
 ## Endpoint: `/api/admin-users-portal/:eventId`
 
 ## Method: `DELETE`
 
 ## Params: `EventId`
 
-## Usage: 
+## Usage:
+
 `If the user is an authenticated Admin and the id of the evnt is given in the database then this endpoint successfully deleted the event and responds with the deleted event object.`
 
-### Note: 
-`This endpoint is only for the Authenticated Admin users `.
+### Note:
 
+`This endpoint is only for the Authenticated Admin users `.
 
 > ```
 > https://amrita-events.herokuapp.com/api/admin-users-portal/6125250abb7921a16d0b6ae7
 > ```
 
-
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+// this is a new commit
