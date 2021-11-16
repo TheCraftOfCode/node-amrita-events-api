@@ -1,6 +1,6 @@
 # Project: Amrita-Events-Api
 
-Backend Rest API for Amrita Events Android App
+Backend Rest API for Amrita Events Android App.
 
 ## End-point: Welcome..!
 
